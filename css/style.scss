@@ -95,14 +95,16 @@ main {
 
 footer {
   transition: all 500ms ease-in;
-  height: 250px;
+  height: max-content;
   background-color: $colorFooter;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-
   & * {
     font-size: 20px;
+  }
+  @media screen and (max-width: 900px) {
+    font-size: 13px !important;
   }
 
   & * .icone {
@@ -113,7 +115,7 @@ footer {
     color: black;
     &:hover {
       transition: all 200ms ease-in;
-      color: rgb(135, 127, 17) !important;
+      color: rgb(255, 248, 144) !important;
       transform: scale(1.3);
     }
   }
@@ -124,8 +126,8 @@ footer {
     transition: all 500ms ease-in;
     text-align: center;
     transform: scale(1);
-    z-index: 1;
     color: black !important;
+
     &:hover {
       transition: all 500ms ease-in;
       font-size: 30px;
@@ -142,7 +144,6 @@ footer {
     transition: all 500ms ease-in;
     text-align: center;
     transform: scale(1);
-    z-index: 1;
     color: black !important;
     &:hover {
       transition: all 500ms ease-in;

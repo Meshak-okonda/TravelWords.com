@@ -106,7 +106,7 @@ main .right * {
 
 footer {
   transition: all 500ms ease-in;
-  height: 250px;
+  height: max-content;
   background-color: #bae7ff;
   display: flex !important;
   justify-content: center !important;
@@ -114,6 +114,11 @@ footer {
 }
 footer * {
   font-size: 20px;
+}
+@media screen and (max-width: 900px) {
+  footer {
+    font-size: 13px !important;
+  }
 }
 footer * .icone {
   font-size: 50px !important;
@@ -124,7 +129,7 @@ footer * .icone {
 }
 footer * .icone:hover {
   transition: all 200ms ease-in;
-  color: #877f11 !important;
+  color: #fff890 !important;
   transform: scale(1.3);
 }
 footer .footer_left {
@@ -133,7 +138,6 @@ footer .footer_left {
   transition: all 500ms ease-in;
   text-align: center;
   transform: scale(1);
-  z-index: 1;
   color: black !important;
 }
 footer .footer_left:hover {
@@ -151,7 +155,6 @@ footer .footer_right {
   transition: all 500ms ease-in;
   text-align: center;
   transform: scale(1);
-  z-index: 1;
   color: black !important;
 }
 footer .footer_right:hover {

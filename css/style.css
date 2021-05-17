@@ -106,7 +106,7 @@ main .right * {
 
 footer {
   transition: all 500ms ease-in;
-  height: max-content;
+  height: fit-content;
   background-color: #bae7ff;
   display: flex !important;
   justify-content: center !important;
@@ -114,6 +114,11 @@ footer {
 }
 footer * {
   font-size: 20px;
+}
+footer * {
+  max-height: 350px;
+  text-align: justify;
+  padding: 5px 20px;
 }
 @media screen and (max-width: 900px) {
   footer {
@@ -143,7 +148,7 @@ footer .footer_left {
 footer .footer_left:hover {
   transition: all 500ms ease-in;
   font-size: 30px;
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-color: #e6f6ff;
   z-index: 999;
   border-radius: 15px;
@@ -161,7 +166,7 @@ footer .footer_right:hover {
   transition: all 500ms ease-in;
   font-size: 30px;
   text-align: center;
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-color: #e6f6ff;
   z-index: 999;
   border-radius: 15px;
